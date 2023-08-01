@@ -1,0 +1,67 @@
+// // @import (reference) '~antd/es/style/themes/index';
+
+.section-box {
+  padding: 20px 30px;
+  background-color: white;
+  border-radius: 15px;
+  .inner-box {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .title {
+      font-size: 15px;
+      margin-top: 10px;
+    }
+  }
+  .item-card {
+    width: 200px;
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-self: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    position: relative;
+    overflow: hidden;
+    .title {
+      font-size: 18px;
+    }
+    .sub-title {
+      color: gray;
+      font-size: 13px;
+      text-align: center;
+      width: 190px;
+    }
+    .action {
+      color: @primary-color;
+      font-size: 15px;
+      cursor: pointer;
+    }
+  }
+  .item-card.active::after {
+    content: '已完成';
+    display: block;
+    width: 100px;
+    height: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 30px;
+    background-color: #43b244;
+    position: absolute;
+    color: white;
+    transform-origin: left top;
+    font-size: 10px;
+    top: -45px;
+    right: -75px;
+    transform: rotate(45deg);
+  }
+}
+.section-title {
+  font-size: 18px;
+}

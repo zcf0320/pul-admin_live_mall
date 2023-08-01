@@ -1,0 +1,119 @@
+.tabs {
+  background: #ffffff;
+  padding: 10px 0 0 20px;
+  margin-bottom: 20px;
+
+  :global(.ant-tabs-nav) {
+    &::before {
+      content: '';
+      border: none !important;
+    }
+  }
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .avatar {
+    position: relative;
+    margin-right: 10px;
+  }
+
+  .defaultAvatarImg,
+  .avatarImg {
+    border: 2px solid #16adff;
+  }
+
+  .avatarImg {
+    border-color: transparent;
+  }
+
+  .userTag {
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%) scale(0.5);
+    font-size: 18px;
+    line-height: 28px;
+    white-space: nowrap;
+    padding: 0 5px;
+    background: #16adff;
+    color: #ffffff;
+  }
+
+  .solutionOutlined {
+    color: #2e75f5;
+    margin-left: 5px;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+  }
+
+  .clickStyle {
+    cursor: pointer;
+    color: #2e75f5;
+  }
+}
+
+.expenditure {
+  display: flex;
+  flex-direction: column;
+
+  .expenditureContent {
+    padding-top: 5px;
+    display: flex;
+    white-space: nowrap;
+    justify-content: center;
+  }
+
+  .amount,
+  .pendingAmount {
+    width: 100px;
+    color: #2e75f5;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .checkText {
+      width: 20px;
+      display: block;
+      color: #2e75f5;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+
+  .pendingAmount {
+    color: orangered;
+
+    .checkText {
+      color: red;
+    }
+  }
+}
+
+.flexCloumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  flex-wrap: wrap;
+  white-space: nowrap;
+
+  button {
+    margin: 0 1px;
+    font-size: 14px;
+    padding: 0 5px;
+  }
+}
+
+.solutionOutlined {
+  color: #2e75f5;
+  margin-left: 5px;
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+}

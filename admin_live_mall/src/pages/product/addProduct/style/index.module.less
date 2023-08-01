@@ -1,0 +1,73 @@
+.button-list {
+  display: flex;
+  align-items: center;
+
+  & button {
+    margin-left: 10px;
+  }
+}
+
+.card {
+  :global(.arco-tabs-header-nav) {
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.step2 {
+  :global(.arco-form-label-item) {
+    text-align: left;
+    margin-left: 20px;
+  }
+}
+
+.category-box {
+  border: 1px solid #eee;
+  width: 25%;
+  min-width: 260px;
+  height: 400px;
+  padding: 16px 0 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.category-item {
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+}
+
+.category-line {
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 36px;
+  align-items: center;
+  cursor: pointer;
+
+  & .category-item {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+  }
+}
+
+.category-line-select {
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 36px;
+  align-items: center;
+  cursor: pointer;
+  background-color: rgb(var(--primary-2));
+}
+
+.radio-group-container {
+  :global(.ant-radio) {
+    align-self: flex-start;
+    margin-top: 3px !important;
+  }
+}

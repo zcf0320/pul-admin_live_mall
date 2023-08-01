@@ -1,0 +1,119 @@
+// @import (reference) '~antd/es/style/themes/index';
+
+.slide_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  flex: 0 0 180px;
+  // box-shadow: 2px 0 8px 0 rgb(29 35 41 / 5%);
+  // transition: all 0.2s ease-out;
+  box-sizing: border-box;
+  height: 100%;
+  // padding-top: 55px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.menu_list {
+  // padding-right: 14px;
+  // padding-left: 14px;
+  background: #0e1a2f;
+  overflow: auto;
+}
+
+.menu_item_container {
+  padding: 7px 14px;
+  &:hover {
+    .menu_item {
+      background-color: #1f2952;
+    }
+  }
+}
+
+.menu_item {
+  // position: relative;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  // margin: 14px 0;
+  padding-right: 15px;
+  padding-left: 15px;
+  overflow: hidden;
+
+  color: #a1a7ba;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+
+  // &:hover {
+  //   background-color: #1f2952;
+  // }
+
+  &.selected {
+    color: white;
+    background-color: #2e75f5 !important;
+  }
+}
+
+.menu_name {
+  margin-left: 10px;
+  // padding-right: 10px;
+}
+
+.bottom_button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  padding: 7px 16px;
+  color: white;
+}
+
+.submenu_list {
+  padding-top: 60px !important;
+  background-color: #f4f6fa;
+}
+
+.submenu_item {
+  position: relative;
+  // padding-left: 5px;
+  // padding-right: 5px;
+  cursor: pointer;
+  display: flex;
+  // width: 106px;
+  align-items: center;
+  max-width: 180px;
+  height: 32px;
+  margin: 10px 0;
+  overflow: hidden;
+  color: #2a2b2e;
+  border-radius: 4px;
+  // padding-inline: 10px;
+  // width: 100px;
+  &.selected {
+    background-color: #e7e9f4;
+    // color: @primary-color!important;
+  }
+
+  &:hover {
+    // background-color: rgb(242, 243, 245);
+    color: @primary-color!important;
+  }
+}
+
+.submenu_title {
+  margin-left: 10px;
+  color: #2a2b2e;
+  // text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  scroll-margin-inline: 12px;
+  margin-block: 18px;
+  margin-bottom: 20px;
+}
+
+.link {
+  color: #000;
+}

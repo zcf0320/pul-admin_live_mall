@@ -1,0 +1,140 @@
+.pageContainer {
+  display: flex;
+  font-size: 16px;
+  color: #999999;
+}
+
+.navPage {
+  width: 375px;
+  height: auto;
+
+  .navHeader {
+    width: 100%;
+    height: 75px;
+  }
+
+  .pageBody {
+    width: 100%;
+    height: 500px;
+    background-color: #eeeeee;
+  }
+
+  .pageTabbar {
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+    position: relative;
+
+    .tabBarItem {
+      //position: absolute;
+      text-align: center;
+      font-size: 14px;
+      color: #666666;
+      display: block;
+
+      .iconUrl {
+        width: 30px;
+        height: 30px;
+        border: 0;
+      }
+
+      img:not([src]) {
+        opacity: 0 !important;
+      }
+
+      .tabBarTitle,
+      .noneTitle {
+        line-height: 36px;
+      }
+
+      .noneTitle {
+        opacity: 0;
+        height: 36px;
+      }
+    }
+  }
+}
+
+.pageRight {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+
+  .colorCustom {
+    display: flex;
+    margin-left: 20px;
+
+    :global {
+      .ant-color-picker-trigger {
+        width: 40px;
+        height: 26px;
+        border-radius: 4px;
+      }
+
+      .ant-color-picker-color-block {
+        width: 30px;
+        height: 18px;
+        margin: 2px auto;
+        border-radius: 0;
+      }
+    }
+  }
+
+  .colorBox {
+    display: flex;
+    vertical-align: center;
+    margin-bottom: 30px;
+
+    .colorSelect {
+      width: 40px;
+      height: 26px;
+      background-color: #ffffff;
+      margin: 0 20px;
+      border-radius: 4px;
+      border: 2px solid #d4d4d4;
+      overflow: hidden;
+
+      .color {
+        width: 30px;
+        height: 18px;
+        margin: 2px auto;
+      }
+    }
+
+    .colorText {
+      text-align: center;
+      font-size: 12px;
+    }
+  }
+
+  .tabContainer {
+    display: flex;
+    align-items: flex-start;
+
+    .addTab {
+      margin-left: 200px;
+    }
+  }
+}
+
+.uploadPhotos {
+  :global {
+    .ant-upload,
+    .ant-upload-select,
+    .ant-upload-list-item,
+    .ant-upload-list-item-container {
+      width: 80px !important;
+      height: 80px !important;
+    }
+  }
+}
+
+.saveBtn {
+  position: absolute;
+  left: 40%;
+  bottom: 5%;
+}

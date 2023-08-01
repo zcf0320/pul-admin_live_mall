@@ -1,0 +1,87 @@
+// @import (reference) '~antd/es/style/themes/index';
+
+.container > * {
+  background-color: @popover-bg;
+  border-radius: 4px;
+  box-shadow: @shadow-1-down;
+}
+
+@media screen and (max-width: @screen-xs) {
+  .container {
+    width: 100% !important;
+  }
+
+  .container > * {
+    border-radius: 0 !important;
+  }
+}
+
+.right {
+  display: flex;
+  float: right;
+  // height: 48px;
+  margin-right: 20px;
+  margin-left: auto;
+  overflow: hidden;
+
+  .action {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    padding: 0 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    > span {
+      vertical-align: middle;
+    }
+
+    &:hover {
+      // background: @pro-header-hover-bg;
+    }
+
+    &:global(.opened) {
+      // background: @pro-header-hover-bg;
+    }
+
+    .account {
+    }
+  }
+}
+
+.avatar {
+  margin-right: 8px;
+  color: @primary-color;
+  vertical-align: top;
+  // background: rgba(255, 255, 255, 0.85);
+}
+
+.name {
+  // margin-left: 6px;
+  // color: white;
+}
+
+.account {
+  display: flex;
+  align-items: center;
+}
+
+.downOutlined {
+  margin-left: 5px;
+}
+
+.switchStore {
+  width: 100px;
+  height: 30px;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  margin-right: 10px;
+
+  &:hover {
+    border: 1px solid #16adff;
+    color: #16adff;
+  }
+}

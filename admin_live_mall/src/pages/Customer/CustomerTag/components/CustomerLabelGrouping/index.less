@@ -1,0 +1,41 @@
+.CustomerLabelGrouping {
+  .table-text {
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .table-operate {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    span {
+      width: 60px;
+      color: #1890ff;
+    }
+    // span:first-child {
+    //   border-right: 1px solid #ccc;
+    // }
+  }
+  .labelGrouping-text {
+    display: inline-block;
+    height: auto;
+    margin: 0 8px 0 0;
+    padding: 0 7px;
+    font-size: 12px;
+    line-height: 20px;
+    white-space: nowrap;
+    background: #fafafa;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    cursor: default;
+    opacity: 1;
+    transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+    .close-icon {
+      color: #ccc;
+    }
+    .close-icon:hover {
+      color: #555;
+    }
+  }
+}

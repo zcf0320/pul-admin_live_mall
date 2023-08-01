@@ -1,0 +1,125 @@
+.headerCard {
+  margin-bottom: 20px;
+  padding-left: 20px;
+
+  .user {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #666666;
+    white-space: nowrap;
+
+    .userInfo {
+      display: flex;
+      flex: 1;
+
+      .userDetail {
+        display: flex;
+        flex-direction: column;
+        margin: auto 30px;
+        line-height: 48px;
+      }
+    }
+
+    .idCard {
+      display: flex;
+      flex-direction: column;
+      margin: auto 0;
+      line-height: 48px;
+      flex: 1;
+    }
+
+    .time {
+      flex: 1;
+      line-height: 48px;
+    }
+  }
+}
+
+.bodyCard {
+  padding-left: 20px;
+
+  .incomeDetailText {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  // form
+  .form {
+    :global {
+      .ant-picker .ant-picker-range {
+        width: 100%;
+      }
+    }
+
+    .buttons {
+      width: 100%;
+      display: flex;
+      margin-top: 20px;
+
+      button {
+        margin-right: 10px;
+      }
+    }
+
+    .amountFormItem {
+      display: flex;
+      align-items: baseline;
+
+      .mr10 {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.boardCard {
+  margin-top: 20px;
+
+  .amountDetail {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .incomeAmount,
+    .expenditureAmount {
+      flex: 1;
+      border: 2px solid #eeeeee;
+      border-radius: 10px;
+      padding: 30px 0 20px 30px;
+      color: #333;
+      font-size: 20px;
+
+      &:hover {
+        box-shadow: 0 0 5px #eeeeee;
+      }
+
+      .amount {
+        font-size: 22px;
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+    }
+
+    .incomeAmount {
+      margin-right: 30px;
+
+      .amount {
+        color: green;
+      }
+    }
+
+    .expenditureAmount {
+      .amount {
+        color: red;
+      }
+    }
+  }
+}
+
+// 表格
+.tableCard {
+  margin-top: 20px;
+}

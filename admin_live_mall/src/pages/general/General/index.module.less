@@ -1,0 +1,214 @@
+.generalHeader {
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.generalContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+
+  .flex {
+    display: flex;
+  }
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+}
+
+.generalInfo {
+  margin-left: 30px;
+
+  .generalName {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    line-height: 40px;
+  }
+}
+
+.visitStore,
+.switchStore {
+  width: 120px;
+  height: 40px;
+  border: 1px solid #d3d3d3;
+  right: 2%;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid #16adff;
+    color: #16adff;
+  }
+}
+
+.qrcode {
+  width: 240px;
+  height: 240px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.generalContent {
+  height: auto;
+  margin-bottom: 20px;
+
+  .dataBoard {
+    width: 100%;
+    min-height: 30vh;
+    position: relative;
+
+    .loading {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .storeData {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+    .dataTitle {
+      color: #000000;
+      font-weight: bold;
+      font-size: 18px;
+      margin-right: 20px;
+    }
+
+    .updateTime {
+      color: #666666;
+      font-size: 14px;
+      margin-right: 20px;
+    }
+  }
+
+  .storeBoard {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    padding: 0 50px;
+
+    .storeLeft {
+      flex: 3;
+      display: flex;
+      flex-wrap: wrap;
+
+      .dataItem {
+        width: 20%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+
+        .dataTitle,
+        .dataYesterday {
+          font-size: 14px;
+          color: #333333;
+          line-height: 28px;
+        }
+
+        .dataNum {
+          font-size: 24px;
+          color: #2e75f5;
+          font-weight: bold;
+          line-height: 48px;
+        }
+
+        .dataYesterday {
+          font-size: 16px;
+          color: #000000;
+        }
+      }
+    }
+
+    .storeRight {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &::before {
+        content: '';
+        width: 1px;
+        height: 350px;
+        background: #d9d9d9;
+        margin-right: 30%;
+      }
+
+      .dataItemTop,
+      .dataItemBottom {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .dataItemTop {
+        margin-bottom: 80px;
+      }
+
+      .dataTitle,
+      .dataYesterMonth {
+        font-size: 18px;
+        color: #333333;
+        line-height: 28px;
+      }
+
+      .dataYesterMonth {
+        font-size: 16px;
+      }
+
+      .dataNum {
+        font-size: 28px;
+        color: #2e75f5;
+        font-weight: bold;
+        line-height: 52px;
+      }
+
+      .dataYesterday {
+        font-size: 18px;
+        color: #000000;
+      }
+    }
+  }
+}
+
+.generalFooter {
+  width: 98%;
+  margin: 0 auto;
+  display: flex;
+
+  .IconItem {
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+
+    img {
+      width: 64px;
+      height: 64px;
+      border-radius: 10px;
+    }
+
+    .IconTitle {
+      font-size: 14px;
+      line-height: 32px;
+      margin-top: 10px;
+      color: #333333;
+    }
+  }
+}

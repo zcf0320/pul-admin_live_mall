@@ -1,0 +1,63 @@
+.calenderdate {
+  :global {
+    .ant-radio-group {
+      display: none;
+    }
+  }
+}
+
+// 日历样式
+.attendance {
+  position: relative;
+  height: 80px;
+  border: 1px solid rgba(238, 238, 238, 0.4);
+  padding: 1px;
+
+  &:hover {
+    background-color: #eeeeee;
+  }
+
+  .dayText {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    color: #000;
+    font-size: 18px;
+    line-height: 50%;
+  }
+
+  .statusText {
+    position: absolute;
+    min-width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    text-align: center;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 0 2px;
+  }
+
+  .repairText {
+    position: absolute;
+    //width: 20px;
+    //height: 20px;
+    line-height: 20px;
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    font-size: 12px;
+    font-weight: bold;
+    color: orangered;
+  }
+
+  .signInTime {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    color: #43b244;
+  }
+}

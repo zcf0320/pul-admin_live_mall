@@ -1,0 +1,82 @@
+@import '../../common';
+
+.teamMemberInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tl {
+  width: 50%;
+  //margin: 0 auto;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 26px;
+}
+
+.settled,
+.teamMemberCard {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.teamMember {
+  button {
+    margin-right: 10px;
+
+    &:not(:first-child) {
+      margin: 0 10px;
+    }
+  }
+}
+
+.timeSelectBtn {
+  //width: 400px;
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+
+  span {
+    margin: 0 5px;
+  }
+}
+
+.timePicker {
+  display: flex;
+  align-items: center;
+}
+
+.performanceCard {
+  margin-bottom: 20px;
+  // 业绩看板
+  .performanceBoard {
+    display: flex;
+    flex-direction: row;
+
+    .boardItem {
+      display: flex;
+      flex-direction: column;
+      width: 33%;
+      height: 138px;
+      border: 1px solid #d9d9d9;
+      margin: 0 10px;
+      padding: 16px 0 0 24px;
+      border-radius: 10px;
+      line-height: 32px;
+
+      .boardTitle {
+        color: #666666;
+      }
+
+      .amount {
+        font-size: 16px;
+        color: #000000;
+        font-weight: 700;
+      }
+
+      .balanceDetail {
+        color: #333333;
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+.colorBox {
+  display: inline-flex;
+  gap: 2px;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+.colorBox_a {
+  width: 44px;
+  height: 22px;
+  border-radius: 3px 0 0 3px;
+}
+
+.colorBox_b {
+  width: 22px;
+  height: 22px;
+}
+
+.colorBox_c {
+  width: 22px;
+  height: 22px;
+  border-radius: 0 3px 3px 0;
+}
+
+.active {
+  border: 1.5px solid #9fbaf6;
+}
+
+.inactive {
+  border: 1.5px solid transparent;
+}
+
+.colorList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.commodity_price {
+  display: flex;
+  align-items: baseline;
+  position: absolute;
+  top: 406px;
+  left: 8px;
+
+  :first-child {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  :last-child {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+.commodity_addCart {
+  padding-inline: 9px;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.commodity_buy {
+  padding-inline: 14px;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.commodity_sku {
+  position: absolute;
+  top: 274px;
+  left: 8px;
+
+  .commodity_sku_title {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .commodity_sku_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    .commodity_sku_item {
+      border: 1px solid;
+      border-radius: 30px;
+      line-height: 24px;
+      padding-inline: 16px;
+      font-size: 12px;
+    }
+  }
+}
+
+.commodity_but {
+  width: 300px;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

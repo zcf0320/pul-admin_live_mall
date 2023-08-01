@@ -1,0 +1,117 @@
+// 表单
+.form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+
+  .formItem {
+    width: 300px;
+    margin-right: 40px;
+  }
+
+  .datePicker {
+    width: 100%;
+  }
+}
+
+// 看板样式
+.billBoard {
+  width: 98%;
+  margin: 20px auto;
+  height: 180px;
+  border-radius: 5px;
+  border: 2px solid #eeeeee;
+  display: flex;
+
+  &:hover {
+    box-shadow: 0 0 5px #eeeeee;
+  }
+
+  .billDetail {
+    flex: 1;
+    height: 50%;
+    margin: auto 0;
+    position: relative;
+    text-align: left;
+
+    &:not(:first-child) {
+      &::after {
+        content: '';
+        display: inline-block;
+        width: 1px;
+        height: 80%;
+        background: #eeeeee;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+
+    p {
+      padding-left: 30px;
+      font-size: 18px;
+      color: #666666;
+    }
+
+    .amountText {
+      font-weight: 500;
+
+      .toolTip {
+        margin-left: 5px;
+      }
+    }
+
+    .amountInfo {
+      display: flex;
+      align-items: center;
+
+      .amount {
+        font-size: 24px;
+        font-weight: bold;
+        color: #000;
+        margin-right: 20px;
+      }
+
+      .transactNum {
+        font-size: 16px;
+        color: #999999;
+      }
+    }
+  }
+}
+
+// table
+.income,
+.expenditure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+
+  .incomeAmount,
+  .expenditureAmount {
+    color: #43b244;
+    margin-right: 10px;
+    font-weight: 500;
+  }
+
+  .expenditureAmount {
+    color: #ff0000ff;
+  }
+
+  .amountNum {
+    color: #666666;
+  }
+}
+
+// 导出弹窗
+.exportModel {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #666666;
+
+  .taskName {
+    color: red;
+  }
+}

@@ -1,0 +1,40 @@
+.up_arrow {
+  font-size: 9px;
+  color: rgb(var(--primary-6));
+}
+
+.down_arrow {
+  font-size: 9px;
+  color: rgb(var(--primary-6));
+  transform: rotate(180deg);
+}
+
+.btn-list {
+  display: flex;
+
+  & button {
+    margin-right: 10px;
+  }
+}
+// 嵌入表格样式
+.inline-pro-table {
+  :global(.ant-table.ant-table-middle) {
+    margin-block: -12px;
+    margin-inline: 0 !important;
+  }
+  :global(.ant-table-row:nth-last-child(1) > td) {
+    border-bottom: none;
+  }
+  :global(.ant-table) {
+    background-color: transparent;
+  }
+}
+
+.copy-btn {
+  width: 18px;
+  height: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  overflow: hidden;
+  justify-content: flex-end;
+}

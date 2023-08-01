@@ -1,0 +1,148 @@
+// 客户列表
+.searchButton {
+  margin-top: 10px;
+  display: flex;
+
+  button {
+    margin-right: 15px;
+    padding: 0 15px;
+  }
+}
+
+.selectWidth {
+  width: 250px;
+}
+
+.userInfo,
+.customer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+
+  .avatar {
+    margin: 8px 10px 5px 0;
+  }
+
+  .defaultAvatarImg,
+  .avatarImg {
+    border: 2px solid #16adff;
+  }
+
+  .avatarImg {
+    border-color: transparent;
+  }
+
+  .userTag {
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%) scale(0.5);
+    font-size: 20px;
+    line-height: 28px;
+    white-space: nowrap;
+    padding: 0 4px;
+    background: #16adff;
+    color: #ffffff;
+  }
+
+  .userBasicInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+
+    .copyId,
+    .copyIdSuccess {
+      color: #16adff;
+      margin-left: 3px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .copyIdSuccess {
+      color: #047903;
+    }
+  }
+
+  .tag {
+    width: auto;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+  }
+}
+
+.operateBtns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  button {
+    //margin: 0 1px;
+    font-size: 14px;
+    padding: 0 5px;
+  }
+}
+
+.identityBtn {
+  font-size: 12px;
+  height: 14px;
+}
+
+//:global {
+//  .ant-radio-group {
+//    display: none;
+//  }
+//}
+
+// 客户详情页面
+.customerDetail {
+  p {
+    color: #666;
+
+    span {
+      color: #000000;
+    }
+  }
+
+  .customerInfo,
+  .statistics {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    .firstColumn,
+    .secondColumn {
+      display: flex;
+      margin-bottom: 10px;
+      justify-content: flex-start;
+      align-content: center;
+      width: 80%;
+
+      p {
+        flex: 1;
+      }
+    }
+
+    .firstColumn {
+      margin-top: 10px;
+    }
+  }
+
+  .statistics {
+    //margin-top: 30px;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 60px;
+  }
+}
+
+.attendanceModel {
+  margin-top: 20px;
+  color: #666666;
+
+  .userName,
+  .registerTime {
+    margin-right: 20px;
+  }
+}
